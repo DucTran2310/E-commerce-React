@@ -90,12 +90,17 @@ const Header = () => {
                     </div>
                     <div className="header__menu__right">
                         <div className="header__menu__item header__menu__right__item">
+                            <input
+                                type="text"
+                                className="header__menu__item header__menu__right__item__search"
+                                placeholder="SearchProduct"
+                            />
                             <i className="bx bx-search"></i>
                         </div>
-                        <div className="header__menu__item header__menu__right__item">
+                        <div className="header__menu__item header__menu__right__item header__menu__right__item__number">
                             <Link to="/cart">
                                 <i className="bx bx-shopping-bag"></i>
-                                <div className="header__menu__item header__menu__right__item__qnt">
+                                <div className="header__menu__item header__menu__right__item__number__qnt">
                                     0
                                 </div>
                             </Link>
