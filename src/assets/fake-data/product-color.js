@@ -1,28 +1,28 @@
 const colors = [
     {
         display: "Trắng",
-        color: "white"
+        color: "white",
     },
     {
         display: "Hồng",
-        color: "pink"
+        color: "pink",
     },
     {
         display: "Đen",
-        color: "black"
+        color: "black",
     },
     {
         display: "Vàng",
-        color: "yellow"
+        color: "yellow",
     },
     {
         display: "Cam",
-        color: "orange"
+        color: "orange",
     },
     {
         display: "Xanh dương",
-        color: "blue"
-    }
-]
+        color: "blue",
+    },
+];
 
-export default colors
+export default colors;
