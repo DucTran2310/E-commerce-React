@@ -93,7 +93,7 @@ const Header = () => {
                             <input
                                 type="text"
                                 className="header__menu__item header__menu__right__item__search"
-                                placeholder="SearchProduct"
+                                placeholder="Nhập từ khóa cần tìm"
                             />
                             <i className="bx bx-search"></i>
                         </div>
