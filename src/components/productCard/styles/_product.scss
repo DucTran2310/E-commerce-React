@@ -1,39 +1,35 @@
 .product-card {
     text-align: center;
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+    background-color: #fff;
+    margin: 0 8px 30px 8px;
+    height: 400px;
+
+    &:hover {
+        transform: scale(1.01);
+        transition: all 0.35s;
+        box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+    }
+
+    // &:nth-child(1) {
+    //     margin-left: 16px;
+    // }
+
+    // &:last-child {
+    //     margin-right: 16px;
+    // }
 
     &__image {
-        padding-top: 100%;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 30px;
+        height: 200px;
+        margin-top: -1px;
+        margin-right: -1px;
+        margin-left: -1px;
 
         img {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 100%;
-
-            &:nth-child(1) {
-                transform: translateX(-50%) scale(1);
-                transition: transform 0.5s ease;
-            }
-
-            &:nth-child(2) {
-                transform: translateX(-50%) scale(0);
-            }
-        }
-
-        &:hover img {
-            &:nth-child(1) {
-                transform: translateX(-50%) scale(0);
-            }
-
-            &:nth-child(2) {
-                transform: translateX(-50%) scale(1);
-                transition: transform 0.5s ease;
-            }
+            width: 100%;
+            max-height: 100%;
         }
     }
 
@@ -42,18 +38,29 @@
         color: $txt-second-color;
         font-size: 1.25rem;
         font-weight: normal;
+        overflow: hidden;
+        height: 58px;
     }
 
     &__price {
-        color: $txt-main-color;
-        font-size: 1.5rem;
+        color: $main-color;
+        font-size: 2rem;
         font-weight: 600;
         margin-bottom: 10px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
 
         &__old {
             color: $txt-second-color;
-            margin-left: 20px;
-            font-weight: 300;
+            font-weight: 500;
+            font-size: 1.4rem;
+
+            &__sale {
+                padding-left: 10px;
+                color: #3c902b;
+            }
         }
     }
 

@@ -4,9 +4,23 @@
     & > * ~ * {
         margin-top: 70px;
     }
-    &__title {
-        font-size: 2rem;
-        text-transform: capitalize;
-        text-align: center;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .hyphen {
+            background-color: rgba(39, 39, 39, 0.274);
+            height: 1px;
+            width: 30vw;
+        }
+
+        .title {
+            font-size: 2rem;
+            text-transform: capitalize;
+            text-align: center;
+            width: 50%;
+        }
     }
 }

@@ -4,17 +4,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Hero = ({ start }) => {
     return (
-        <Carousel fade>
-            {start.map((item, index) => (
-                <Carousel.Item key={index}>
-                    <img
-                        className="d-block w-100"
-                        src={item}
-                        alt="First slide"
-                    />
-                </Carousel.Item>
-            ))}
-        </Carousel>
+        <div className="hero">
+            <Carousel fade>
+                {start.map((item, index) => (
+                    <Carousel.Item key={index}>
+                        <img
+                            className="d-block w-100"
+                            src={item}
+                            alt="First slide"
+                        />
+                    </Carousel.Item>
+                ))}
+            </Carousel>
+        </div>
     );
 };
 

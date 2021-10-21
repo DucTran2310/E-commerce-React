@@ -46,7 +46,7 @@ const footerCustomerLinks = [
 
 const Footer = () => {
     return (
-        <footer>
+        <div className="footer">
             <div className="container">
                 <Grid col={4} mdCol={2} smCol={2} gap={10}>
                     <div>
@@ -95,14 +95,14 @@ const Footer = () => {
                         </p>
                         <p>
                             Hướng đến mục tiêu mang lại niềm vui ăn mặc mới mỗi
-                            ngày cho hàng triệu người tiêu dùng Việt. Hãy cùng
-                            Yolo hướng đến một cuộc sống năng động, tích cực
-                            hơn.
+                            ngày cho hàng triệu người tiêu dùng Việt. “Tận tâm
+                            với khách hàng“, MI VIỆT NAM luôn nỗ lực mang tới
+                            dịch vụ và trải nghiệm tốt nhất
                         </p>
                     </div>
                 </Grid>
             </div>
-        </footer>
+        </div>
     );
 };
 
