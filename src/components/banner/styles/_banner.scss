@@ -1,0 +1,12 @@
+.banner {
+    overflow: hidden;
+    border-radius: 8px;
+    &__img {
+        max-width: 100%;
+        max-height: 200px;
+        transition: all 0.65s ease;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
